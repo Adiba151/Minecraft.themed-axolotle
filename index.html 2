@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axolotl - Minecraft Edition</title>
+    <!-- Imports a pixelated Minecraft-style font from Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            /* Loads a repeating Minecraft dirt block background texture */
+            background-image: url('https://transparenttextures.com'), linear-gradient(#2c1d11, #1b110a);
+            background-color: #2c1d11; 
+            color: #ffffff;
+            font-family: 'VT323', monospace; /* Clean retro arcade font */
+            font-size: 24px;
+            text-align: center;
+            padding-top: 50px;
+            image-rendering: pixelated; /* Keeps textures looking sharp and blocky */
+        }
+        
+        .container {
+            background-color: rgba(0, 0, 0, 0.75); /* Dark semi-transparent box like Minecraft UI */
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 30px;
+            border: 4px solid #3c3c3c;
+            outline: 4px solid #000000;
+        }
 
+        h1 {
+            font-family: 'Press Start 2P', monospace; /* Blocky title font */
+            font-size: 20px;
+            color: #ffff55; /* Minecraft yellow text color */
+            text-shadow: 3px 3px #3f3f00; /* Drop shadow effect */
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.4;
+            margin: 20px 0;
+            text-shadow: 2px 2px #000000;
+        }
+
+        .profile-img {
+            width: 250px;
+            height: auto;
+            border: 4px solid #ffffff;
+            display: block;
+            margin: 20px auto;
+            image-rendering: pixelated;
+        }
+
+        /* Styles the button to look exactly like a Minecraft UI button */
+        .my-button {
+            font-family: 'Press Start 2P', monospace;
+            font-size: 14px;
+            background-color: #9e9e9e;
+            color: #ffffff;
+            padding: 12px 24px;
+            border: 4px solid;
+            border-color: #dfdfdf #3e3e3e #3e3e3e #dfdfdf; /* Beveled button edge */
+            cursor: pointer;
+            margin-top: 25px;
+            text-shadow: 2px 2px #000000;
+        }
+
+        .my-button:hover {
+            background-color: #a7a7a7;
+            border-color: #ffffff #4a4a4a #4a4a4a #ffffff;
+            color: #ffff55; /* Turns text yellow on hover */
+        }
+        
+        .my-button:active {
+            border-color: #3e3e3e #dfdfdf #dfdfdf #3e3e3e; /* Looks pressed down */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Website!<br>This website's name was given by my sister.</h1>
+        
+        <img src="axolotl.jpg" alt="A cute axolotl" class="profile-img">
+
+        <p>This site is hosted directly on GitHub Pages.</p>
+        <p>Axolotls are unique creatures known as Mexican walking fish. They can regenerate their limbs, hearts, and even parts of their brains!</p>
+        <p>I am building this website to learn coding. It is exciting to see the changes update live on the internet.</p>
+
+        <button class="my-button" onclick="alert('Hello! Thanks for clicking! Here, have some cookie, just kidding. Let\'s play Minecraft after we have lunch!')">Click Me!</button>  
+    </div>
+
+</body>
+</html>
